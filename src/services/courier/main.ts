@@ -4,15 +4,6 @@ import { Logger } from 'nestjs-pino';
 import { CourierModule } from './courier.module';
 
 async function bootstrap() {
-  // const app = await NestFactory.createMicroservice(CourierModule.forService(), {
-  //   transport: Transport.RMQ,
-  //   options: {
-  //     urls: ['amqp://root:password@rabbitmq:5672'],
-  //     queue: 'courier',
-  //   },
-  //   bufferLogs: true,
-  // });
-
   const app = await NestFactory.createMicroservice(CourierModule.forService(), {
     transport: Transport.RMQ,
     options: {
@@ -21,6 +12,16 @@ async function bootstrap() {
     },
     bufferLogs: true,
   });
+
+  // const app = await NestFactory.createMicroservice(CourierModule.forService(), {
+  //   transport: Transport.KAFKA,
+  //   options: {
+  //     client: {
+  //       brokers: ['kafka:9092'],
+  //     },
+  //   },
+  //   bufferLogs: true,
+  // });
 
   app.useLogger(app.get(Logger));
 

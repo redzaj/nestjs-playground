@@ -13,6 +13,24 @@ export class StoreModule {
       module: StoreModule,
       imports: [
         ClientsModule.register([
+          // {
+          //   name: 'StoreProxyClient',
+          //   transport: Transport.TCP,
+          //   options: {
+          //     host: '127.0.0.1',
+          //     port: 9001,
+          //     retryAttempts: 3,
+          //     retryDelay: 10,
+          //   } as any,
+          // },
+          // {
+          //   name: 'StoreProxyClient',
+          //   transport: Transport.REDIS,
+          //   options: {
+          //     host: 'redis',
+          //     port: 6379,
+          //   } as any,
+          // },
           {
             name: 'StoreProxyClient',
             transport: Transport.RMQ,

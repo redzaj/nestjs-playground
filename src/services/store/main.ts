@@ -4,6 +4,21 @@ import { Logger } from 'nestjs-pino';
 import { StoreModule } from './store.module';
 
 async function bootstrap() {
+  // const app = await NestFactory.createMicroservice(StoreModule.forService(), {
+  //   transport: Transport.TCP,
+  //   options: { host: '0.0.0.0', port: 9001 },
+  //   bufferLogs: true,
+  // });
+
+  // const app = await NestFactory.createMicroservice(StoreModule.forService(), {
+  //   transport: Transport.REDIS,
+  //   options: {
+  //     host: 'redis',
+  //     port: 6379,
+  //   },
+  //   bufferLogs: true,
+  // });
+
   const app = await NestFactory.createMicroservice(StoreModule.forService(), {
     transport: Transport.RMQ,
     options: {

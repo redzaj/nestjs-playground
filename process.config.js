@@ -1,6 +1,6 @@
 const logging = {
-  out_file: process.env.LOG_FILE,
-  error_file: process.env.LOG_FILE,
+  // out_file: process.env.LOG_FILE,
+  // error_file: process.env.LOG_FILE,
 };
 
 module.exports = {

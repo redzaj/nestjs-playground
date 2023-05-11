@@ -19,6 +19,19 @@ export class CourierModule {
               queue: 'courier',
             },
           },
+          // {
+          //   name: 'CourierProxyClient',
+          //   transport: Transport.KAFKA,
+          //   options: {
+          //     client: {
+          //       clientId: 'courier',
+          //       brokers: ['kafka:9092'],
+          //     },
+          //     consumer: {
+          //       groupId: 'courier-consumer',
+          //     },
+          //   },
+          // }
         ]),
       ],
       providers: [
