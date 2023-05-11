@@ -1,0 +1,30 @@
+{
+    "name": "NestJS Playground",
+    "dockerComposeFile": ["docker-compose.yaml"],
+    "service": "app",
+	"workspaceFolder": "/workspace",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"eamodio.gitlens",
+				"rangav.vscode-thunder-client",
+				"rohinivsenthil.rabbitrace",
+				"cweijan.vscode-mysql-client2",
+				"jeppeandersen.vscode-kafka"
+			],
+			"settings": {
+				"thunder-client.defaultUrl": "http://locahost:3000",
+				"thunder-client.saveToWorkspace": true,
+				"thunder-client.workspaceRelativePath": "examples",
+				"remote.portsAttributes": {
+					"27017": { "label": "Mongo" },
+					"15672": { "label": "RabbitMQ Management" },
+					"5000": { "label": "Mailbox" },
+					"8080": { "label": "API" },
+					"6379": { "label": "Redis" }
+				}
+			}
+		}
+	},
+	"forwardPorts": [27017, 15672, 5000, 8080, 6379]
+}

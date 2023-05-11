@@ -1,0 +1,26 @@
+{
+    "name": "app",
+    "private": true,
+    "dependencies": {
+        "@nestjs/common": "^9.0.0",
+        "@nestjs/core": "^9.0.0",
+        "@nestjs/microservices": "^9.0.0",
+        "@nestjs/platform-express": "^9.0.0",
+        "nestjs-pino": "3.2.0",
+        "pino-pretty": "10.0.0",
+        "reflect-metadata": "^0.1.13",
+        "rxjs": "^7.2.0",
+        "@service/courier": "workspace:*",
+        "@service/store": "workspace:*",
+        "amqplib": "0.10.3",
+        "amqp-connection-manager": "4.1.13",
+        "ioredis": "5.3.2",
+        "nats": "2.13.1",
+        "mqtt": "4.3.7",
+        "kafkajs": "2.2.4",
+        "@grpc/proto-loader": "0.7.7",
+        "@grpc/grpc-js": "1.8.14",
+        "@nestjs/websockets": "9.4.0",
+        "@nestjs/platform-socket.io": "9.4.0"
+    }
+}

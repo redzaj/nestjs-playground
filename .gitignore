@@ -1,0 +1,6 @@
+.pnpm-store
+dist
+node_modules
+
+examples/thunder-tests/*
+!examples/thunder-tests/thunderclient.json

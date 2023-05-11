@@ -1,0 +1,16 @@
+{
+    "name": "@service/store",
+    "private": true,
+    "main": "main.ts",
+    "publishConfig": {
+        "main": "main.js"
+    },
+    "peerDependencies": {
+        "@nestjs/common": "^9.0.0",
+        "@nestjs/core": "^9.0.0",
+        "@nestjs/microservices": "^9.0.0",
+        "rxjs": "^7.2.0",
+        "nestjs-pino": "3.2.0",
+        "pino-pretty": "10.0.0"
+    }
+}
